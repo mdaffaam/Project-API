@@ -11,12 +11,17 @@ Content-Type: application/json
 }
 
 ###
-
+// Get all users (adminOnly)
 GET http://localhost:5000/users
+
+###
+// Get single users (adminOnly)
+GET http://localhost:5000/users/uuid-yg-didapat
 
 
 ###
-PATCH http://localhost:5000/users/30e29784-0c43-44dc-af4b-6ce38a01ee5b
+Update users (adminOnly)
+PATCH http://localhost:5000/users/uuid-yg-didapat
 Content-Type: application/json
 
 {
@@ -28,6 +33,7 @@ Content-Type: application/json
 }
 
 ###
+login users
 POST http://localhost:5000/login
 Content-Type: application/json
 
@@ -37,7 +43,9 @@ Content-Type: application/json
 }
 
 ###
+Info users
 GET http://localhost:5000/Me
 
 ###
+Logout users
 DELETE http://localhost:5000/logout
