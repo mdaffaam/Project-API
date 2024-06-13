@@ -10,14 +10,15 @@ Content-Type: application/json
 }
 
 ###
-
+// Get all users (adminOnly)
 GET http://localhost:5000/users
 
 ###
-
+// Delete user by Id (adminOnly)
 DELETE http://localhost:5000/users/84c6ceb5-359c-4f18-8667-47b47d7f6bc2
 
 ###
+Update user by Id (adminOnly)
 PATCH http://localhost:5000/users/30e29784-0c43-44dc-af4b-6ce38a01ee5b
 Content-Type: application/json
 
@@ -30,6 +31,7 @@ Content-Type: application/json
 }
 
 ###
+// login
 POST http://localhost:5000/login
 Content-Type: application/json
 
@@ -39,7 +41,9 @@ Content-Type: application/json
 }
 
 ###
+// Info user yg login
 GET http://localhost:5000/Me
 
 ###
+// logout
 DELETE http://localhost:5000/logout
