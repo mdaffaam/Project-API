@@ -1,7 +1,7 @@
 // Create a user
-POST http://localhost:5000/regist
+POST http://34.101.188.192:5000/regist
 Content-Type: application/json
-
+// contoh input data
 {
     "name": "user1",
     "email": "user1@gmail.com",
@@ -11,17 +11,17 @@ Content-Type: application/json
 
 ###
 // Get all users (adminOnly)
-GET http://localhost:5000/users
+GET http://34.101.188.192:5000/users
 
 ###
 // Delete user by Id (adminOnly)
-DELETE http://localhost:5000/users/84c6ceb5-359c-4f18-8667-47b47d7f6bc2
+DELETEhttp://34.101.188.192:5000/users/84c6ceb5-359c-4f18-8667-47b47d7f6bc2
 
 ###
 Update user by Id (adminOnly)
-PATCH http://localhost:5000/users/30e29784-0c43-44dc-af4b-6ce38a01ee5b
+PATCH http://34.101.188.192:5000/users/30e29784-0c43-44dc-af4b-6ce38a01ee5b
 Content-Type: application/json
-
+// contoh input data
 {
     "name": "ame",
     "email": "test@gmail.com",
@@ -32,7 +32,7 @@ Content-Type: application/json
 
 ###
 // login
-POST http://localhost:5000/login
+POST http://34.101.188.192:5000/login
 Content-Type: application/json
 
 {
@@ -42,8 +42,8 @@ Content-Type: application/json
 
 ###
 // Info user yg login
-GET http://localhost:5000/Me
+GET http://34.101.188.192:5000/Me
 
 ###
 // logout
-DELETE http://localhost:5000/logout
+DELETE http://34.101.188.192:5000/logout
