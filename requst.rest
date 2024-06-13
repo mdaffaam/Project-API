@@ -1,27 +1,24 @@
 // Create a user
-POST http://localhost:5000/users
+POST http://localhost:5000/regist
 Content-Type: application/json
 
 {
-    "name": "ada",
-    "email": "ada@gmail.com",
-    "password": "ini",
-    "confPassword": "ini",
-    "role": "admin"
+    "name": "user1",
+    "email": "user1@gmail.com",
+    "password": "pw",
+    "confPassword": "pw"
 }
 
 ###
-// Get all users (adminOnly)
+
 GET http://localhost:5000/users
 
 ###
-// Get single users (adminOnly)
-GET http://localhost:5000/users/uuid-yg-didapat
 
+DELETE http://localhost:5000/users/84c6ceb5-359c-4f18-8667-47b47d7f6bc2
 
 ###
-Update users (adminOnly)
-PATCH http://localhost:5000/users/uuid-yg-didapat
+PATCH http://localhost:5000/users/30e29784-0c43-44dc-af4b-6ce38a01ee5b
 Content-Type: application/json
 
 {
@@ -33,19 +30,16 @@ Content-Type: application/json
 }
 
 ###
-login users
 POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "email": "test@gmail.com",
-    "password": "inipw"
+    "email": "daffa@gmail.com",
+    "password": "pw"
 }
 
 ###
-Info users
 GET http://localhost:5000/Me
 
 ###
-Logout users
 DELETE http://localhost:5000/logout
